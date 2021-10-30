@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="header">
+    <div class="left">
+      <div class="logo">
+        
+        <div class="name_school">
+          <p class="p1">ĐẠI HỌC ĐÀ NẴNG</p>
+        <P class="p2">TRƯỜNG ĐẠI HỌC SƯ PHẠM KĨ THUẬT</P>
+        <p class="p3">University of Technology and Education-The University of Danang</p>
+        </div>
+      </div>
+    </div>
+    <div class="mid"></div>
+    <div class="right">
+      <form action="">
+        <label for=""><input type="button" name="history" id="" class="history" value="LỊCH  SỬ"> </label>
+      <label for=""><input type="button" name="log_out" id="log_out" class="log_out" value="ĐĂNG  XUẤT" ></label>
+      </form>
+    </div>
+  </div>
+  <div class="infomation" >
+   <div class="content">
+     <h1>THÔNG TIN THÀNH VIÊN</h1>
+    <p>Nguyễn Văn A</p>
+    <p>Nguyễn Văn A</p>
+    <p>Nguyễn Văn A</p>
+   </div>
+  </div>
+  <div class="on_off">
+    <div class="control">
+    <form action="">
+      <h1 class="dieu_khien">BẢNG ĐIỀU KHIỂN</h1>
+      <table>
+        <tr>
+          <td class="name_btn"> ON</td>
+          <td class="name_btn"> OFF</td>
+        </tr>
+        <tr>
+          <td><label for=""><input type="radio" name="btn" id="on" > </label></td>
+          <td><label for=""><input type="radio" name="btn" id="off"></label></td>
+        </tr>
+      </table>
+      
+      
+    </form>
+  </div>
+  </div>
+ 
+</body>
+<script>
+let Logout = document.getElementById('log_out');
+Logout.addEventListener('click',function()
+{
+  window.location.href="../login.html"
+})
+</script>
+</html>

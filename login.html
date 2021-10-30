@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="box">
+            <div class="container">
+                <div class="form">
+                    <h2>ĐĂNG NHẬP</h2>
+                    <form action="">
+                    <div class="inputBox" >
+                        <input type="text" placeholder="Tài khoản" id="acc">
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" placeholder="Mật khẩu" id="pass">
+                    </div>
+                    <div class="inputBox">
+                        <input type="button" value="Đăng nhập" id="login"> 
+                    </div>
+                    <p id="error"></p>
+                </form>
+            </div>
+        </div>
+       </div>
+    </section>
+</body>
+<script>
+    
+ let Login=document.getElementById('login');
+ Login.addEventListener("click",function(){
+    // let tk="admin";
+    //  let mk = 1234;
+     let Acc =document.getElementById('acc').value;
+     let Pass =document.getElementById('pass').value;
+     if (Acc==''|| Pass=='') {
+         document.getElementById('error').innerText='Vui lòng nhập đầy đủ thông tin!'
+     }
+     else if(Acc=='admin'&&Pass=='1234') {
+        window.location.href = "./index/index.html";
+     }
+     else {
+        document.getElementById("error").innerText ='Mật khẩu sai. Vui lòng thử lại!'
+     }
+
+ })
+</script>
+</html>
